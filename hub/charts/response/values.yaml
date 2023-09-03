@@ -1,0 +1,41 @@
+response:
+  replicaCount: 1
+  appName: hub-response
+  namespace: app
+
+  image:
+    repository: rafaelcavasani/hub-response
+    pullPolicy: IfNotPresent
+    tag: "latest"
+
+  service:
+    type: ClusterIP
+    port: 8080
+
+  env:
+    - name: NAME
+      value: hub-response
+    - name: LOGGING_LEVEL
+      value: INFO
+    - name: PORT
+      value: 8081
+    - name: TIMEOUT
+      value: 100
+    - name: CONTROLLER_URL
+      value: http://controller
+    - name: OTEL_EXPORTER_OTLP_ENDPOINT
+      value: http://otel-collector:4317
+    - name: OTEL_EXPORTER_JAEGER_ENDPOINT
+      value: http://jaeger:9411/api/traces
+    - name: OTEL_EXPORTER_JAEGER_AGENT_HOST
+      value: jaeger
+    - name: OTEL_SERVICE_NAME
+      value: observability-app
+
+  resources:
+    limits:
+      cpu: 100m
+      memory: 56Mi
+    requests:
+      cpu: 100m
+      memory: 56Mi

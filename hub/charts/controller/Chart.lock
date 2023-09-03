@@ -1,0 +1,6 @@
+dependencies:
+- name: observability-app
+  repository: https://rafaelcavasani.github.io/helm-repo
+  version: 0.1.0
+digest: sha256:96e89bf037e10b971a1772c2ac3d7bb5f9b137faf2d703d493e2aa2ab1ccda9c
+generated: "2023-09-03T12:21:13.0712475-03:00"

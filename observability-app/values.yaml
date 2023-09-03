@@ -1,4 +1,5 @@
 replicaCount: 1
+appName: app-name
 namespace: app
 
 image:

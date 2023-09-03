@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ include "observability-app.fullname" . }}
+  name: {{ .Values.appName }}
   namespace: {{ .Values.namespace }}
   labels:
     {{- include "observability-app.labels" . | nindent 4 }}

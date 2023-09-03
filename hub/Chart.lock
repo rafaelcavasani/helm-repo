@@ -1,0 +1,12 @@
+dependencies:
+- name: caller
+  repository: file://./charts/caller
+  version: 0.1.0
+- name: controller
+  repository: file://./charts/controller
+  version: 0.1.0
+- name: response
+  repository: file://./charts/response
+  version: 0.1.0
+digest: sha256:e4f324886829f2dcad0d27be8943d468a05097f1c19c27ed0c7b4f4b73a56776
+generated: "2023-09-03T12:22:58.2380039-03:00"
