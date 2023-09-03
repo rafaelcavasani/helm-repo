@@ -1,4 +1,4 @@
-caller:
+observability-app:
   replicaCount: 1
   appName: hub-caller
   namespace: app
