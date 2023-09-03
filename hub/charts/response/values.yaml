@@ -1,4 +1,4 @@
-response:
+observability-app:
   replicaCount: 1
   appName: hub-response
   namespace: app

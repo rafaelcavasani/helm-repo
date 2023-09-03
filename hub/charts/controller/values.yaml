@@ -1,4 +1,4 @@
-controller:
+observability-app:
   replicaCount: 1
   appName: hub-controller
   namespace: app
